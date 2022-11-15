@@ -1,0 +1,25 @@
+*{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cylindre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.code{
+    width: 10%;
+    height: 30%;
+    background-color: red;
+    margin: 10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
