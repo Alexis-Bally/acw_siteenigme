@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Tailles de polices */
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #003819;
+    height: 80px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 90%;
+    width: auto;
+}
+
+.groupe-liens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.lien {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+.lien:hover h3 {
+    text-decoration: underline;
+}
+
+.lien img {
+    margin-right: 10px;
+}
+
+/* Hero */
+.hero {
+    background-image: url('img/img_header.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: calc(1000px - 80px);
+    position: relative;
+}
+
+.hero h1 {
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.hero a {
+    background-color: #00B851;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 35px;
+    width: 250px;
+    position: absolute;
+    bottom: 220px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titres */
+.titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.menhir-gauche {
+    transform: scaleX(-1);
+}
+
+/* Sections */
+.content {
+    padding: 0 10%;
+    margin-bottom: 200px;
+}
+
+/* Cartes */
+.card {
+    border-radius: 20px;
+    margin: 0;
+}
+
+/* Parc */
+.cards-parc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-parc div {
+    background-color: #00863B;
+    padding: 50px 30px;
+    width: 45%;
+    color: white;
+}
+
+.cards-parc p {
+    font-size: 32px;
+    text-align: justify;
+}
+
+/* Attractions */
+.cards-attraction {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-attraction div {
+    background-color: #527A64;
+    padding: 50px 30px;
+    margin: 50px 0;
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-attraction img {
+    border-radius: 30px;
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    margin: 40px auto;
+}
+
+.card-title {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.cards-attraction p {
+    margin-bottom: 30px;
+}
+
+.cards-attraction a {
+    background-color: #00EB67;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Map */
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.map img {
+    width: 90%;
+    border-radius: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #141F19;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
