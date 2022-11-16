@@ -15,13 +15,28 @@
 .code{
     width: 10%;
     height: 30%;
-    background-color: red;
     margin: 10px;
 }
 
 .buttons{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: unset;
+    border: solid black 1px;
 }
 
 .code-html {
