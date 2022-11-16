@@ -1,103 +1,40 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Test du cul</title>
+  </head>
+  <body style="text-align: center; padding: 0; border: 0; margin: 0;">
+    <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/testducul.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
 
-    <link rel="stylesheet" href="style.css">
+        var canvas = document.querySelector("#unity-canvas");
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
 
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav id="nav">
-            <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
-            <div class="groupe-liens">
-                <a href="#parc" class="lien">
-                    <h3>Parc</h3>
-                </a>
-                <a href="#attractions" class="lien">
-                    <h3>Attractions</h3>
-                </a>
-                <a href="#plan" class="lien">
-                    <h3>Plan</h3>
-                </a>
-            </div>
-        </nav>
-        <section class="hero 5[6]">
-            <h1>Journée d'intégration à l'IIM !</h1>
-            <a href="enigma.html">Je découvre</a>
-        </section>
-    </header>
+        document.body.style.textAlign = "left";
+      }
 
-    <section id="parc" class="content">
-        <div class="titre">
-            <img src="img/menhir.png" alt="mehnir" class="menhir-gauche">
-            <h2>Le Parc</h2>
-            <img src="img/menhir.png" alt="menhir">
-        </div>
-        <div class="cards-parc">
-            <div class="card">
-                <p>D’étonnant mélanges de 39 attractions et de grands spectacles, le tout dans des décors truffés d'humour gaulois, Parc Astérix, c'est la "potion loisirs" testée et approuvée depuis 1989 par des millions de visiteurs.</p>
-            </div>
-            <div class="card">
-                <p>C’est le troisième parc à thème le plus visité de France derrière les deux parcs de Disneyland Paris, Disneyland et Walt Disney Studio.</p>
-                <p>Le parc à également reçu un Thea Award.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="attractions" class="content">
-        <div class="titre">
-            <img src="img/menhir.png" alt="menhir" class="menhir-gauche">
-            <h2>Les Attractions Phares</h2>
-            <img src="img/menhir.png" alt="2[0]">
-        </div>
-        <div class="cards-attraction">
-            <div class="card">
-                <h4 class="card-title">Goudurix</h4>
-                <img src="img/attractions/parc-asterix-Goudurix.jpg" alt="Goudurix">
-                <p>Vous avez le goût du risque ? Pour le savoir, embarquez à bord de notre hallucinant grand huit. 
-                    Assurancetourix l’a testé et approuvé. On raconte qu’il n’a jamais chanté aussi aigu que le jour où il a testé l’attraction.</p>
-                <a href="page_erreur_goudurix.html">Découvrir</a>
-            </div>
-            <div class="card">
-                <h4 class="card-title">Oziris</h4>
-                <img src="img/attractions/Attraction-Oziris.jpg" alt="Oziris">
-                <p>Lancés à pleine vitesse à 40 m de hauteur sur ces montagnes russes inversées, 9[3] vous enchaînez les loopings et vrilles au cœur du Parc. 
-                    Le ciel ne va peut-être pas vous tomber sur la tête mais vous risquez quand même de voir quelques étoiles !</p>
-                <a href="page_erreur_oziris.html">Découvrir</a>
-            </div>
-            <!--<0[7]>Regardez autour de moi</0[7]>-->
-            <div class="card">
-                <h4 class="card-title">Tonnerre de Zeus</h4>
-                <img src="img/attractions/tonnerre de zeus.jpg" alt="tonnerre de zeus">
-                <p>Décollage immédiat vers l’Olympe avec cette montagne russe toute en bois. Emotion garantie ! 
-                    A 30 mètres de haut, le parcours est vertigineux et la vue à couper le souffle ! 
-                    Enfin, si vous ouvrez bien l'œil, car à 8[1] km/h, le paysage défile vite !</p>
-                <a href="page_erreur_tonnerre.html">Découvrir</a>
-            </div>
-            <div class="card">
-                <h4 class="card-title 6[4]">Discobelix</h4>
-                <img src="img/attractions/discobelix.jpg" alt="discobelix">
-                <p>Que se passe-t-il quand Obélix s’essaie au lancer de disque ? Ça tourbillonne drôlement !</p>
-                <a href="page_erreur_discolbelix.html">Découvrir</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="plan" class="content">
-        <div class="titre">
-            <img src="img/menhir.png" alt="menhir" class="menhir-gauche">
-            <h2 id="5[5]">Plan du Parc</h2>
-            <img src="img/menhir.png" alt="menhir">
-        </div>
-        <div class="map">
-            <img src="img/plan-parc-asterix.jpg" alt="plan du parc">
-        </div>
-    </section>
-
-    <footer>
-        <h3>Adobe Creative Week - 7[2]</h3>
-    </footer>
-</body>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/testducul.data.gz",
+        frameworkUrl: "Build/testducul.framework.js.gz",
+        codeUrl: "Build/testducul.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Test du cul",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
 </html>
